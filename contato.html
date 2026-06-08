@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contatos | Dojo Tacayamba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Montserrat', sans-serif;
+      background:#e9e9e9;
+      color:#222;
+    }
+
+    header{
+      background:#1F3B94;
+      padding:60px 30px 25px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      font-weight:800;
+      margin-bottom:15px;
+      color:#fff;
+    }
+
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#fff;
+      font-size:0.95rem;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      opacity:.7;
+    }
+
+    main{
+      padding:50px 25px 120px;
+      max-width:900px;
+      margin:auto;
+      text-align:center;
+      min-height:500px;
+    }
+
+    h2{
+      font-size:2.5rem;
+      margin-bottom:50px;
+      color:#000;
+      font-weight:800;
+    }
+
+    .contatos-box{
+      display:flex;
+      justify-content:center;
+      gap:60px;
+      flex-wrap:wrap;
+    }
+
+    .contato-item{
+      text-decoration:none;
+      color:#000;
+      transition:.25s;
+    }
+
+    .contato-item:hover{
+      transform:scale(1.05);
+    }
+
+    img {
+      width: 100px;
+    }
+    
+    .contato-item h3{
+      font-size:2rem;
+      font-weight:800;
+    }
+    
+    footer{
+      background:#213D99;
+      color:#fff;
+      padding:35px 25px;
+    }
+
+    .footer-content{
+      max-width:1100px;
+      margin:auto;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    .footer-info{
+      max-width:600px;
+    }
+
+    .footer-info h3{
+      margin-bottom:10px;
+      font-size:1.1rem;
+    }
+
+    .footer-info p{
+      line-height:1.8;
+      margin-bottom:15px;
+      font-size:.95rem;
+    }
+
+    .footer-info strong{
+      display:block;
+      margin-bottom:8px;
+    }
+
+    .logo{
+      width:120px;
+      height:120px;
+      object-fit:contain;
+      background:#fff;
+      border-radius:50%;
+      padding:5px;
+    }
+
+    .copy{
+      text-align:center;
+      margin-top:25px;
+      font-size:.8rem;
+      opacity:.9;
+    }
+    
+    @media(max-width:768px){
+
+      header h1{
+        font-size:2.2rem;
+      }
+
+      nav{
+        gap:14px;
+      }
+
+      nav a{
+        font-size:.9rem;
+      }
+
+      h2{
+        font-size:2rem;
+      }
+
+      .contatos-box{
+        gap:40px;
+      }
+
+      .contato-item h3{
+        font-size:1.7rem;
+      }
+
+      .footer-content{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+
+    <h1>DOJO TACAYAMBA</h1>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="historia.html">História</a>
+      <a href="faixas.html">Faixas</a>
+      <a href="estudos.html">Estudos</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contatos</a>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <h2>Saiba Mais!</h2>
+
+    <div class="contatos-box">
+      <a href="https://instagram.com/dojotacayamba" class="contato-item">
+      <img src="image/instagram.png" alt="icone do instagram">
+      </a>
+
+      <a href="https://wa.me/5581974019739" class="contato-item">
+      <img src="image/whatsapp.png" alt="icone do whatsapp">
+      </a>
+
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="footer-content">
+
+      <div class="footer-info">
+
+        <h3>Dojo Tacayamba</h3>
+
+        <p>
+          Ensinando os valores do judô:<br>
+          Respeito, Disciplina e Excelência.
+        </p>
+
+        <strong>Contatos</strong>
+
+        <p>
+          Instagram: @DojoTacayamba<br>
+          Telefone: (81) 97401 - 9739<br>
+          Endereço: Rua Quixabeira, 22 - Tabajara, Olinda - PE
+        </p>
+
+        <strong>Horários</strong>
+
+        <p>
+          Segunda, Quarta e Sexta: 16h - 19h30
+          <br>
+          Terça e Quinta: 18h - 21h
+        </p>
+
+      </div>
+
+      <img class="logo" src="image/favicon_dojo_tacayamba.png" alt="Logo Dojo">
+      
+    </div>
+
+    <div class="copy">
+      © 2026 Dojo Tacayamba. Todos os direitos reservados.<br>
+      App Web Desenvolvido por Everton Rodrigo
+    </div>
+
+  </footer>
+</body>
+</html>

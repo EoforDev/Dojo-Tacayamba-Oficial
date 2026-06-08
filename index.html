@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Dojo Tacayamba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Montserrat', sans-serif;
+      background:#e7e7e7;
+      color:#222;
+    }
+
+    header{
+      background:#1F3B94;
+      padding:60px 30px 25px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      font-weight:800;
+      margin-bottom:15px;
+      color: #fff;
+    }
+
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#fff;
+      font-size:0.95rem;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      opacity:.7;
+    }
+
+    .hero{
+      background:
+      linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+      url("image/fundo de iamgem home 1.png");
+
+      background-size:cover;
+      background-position:center;
+
+      min-height: 800px;
+
+      display:flex;
+      align-items:center;
+
+      padding:30px;
+    }
+
+    .hero-content{
+      max-width:500px;
+      color:#fff;
+    }
+
+    .hero-content h2{
+      font-size:2.2rem;
+      margin-bottom:15px;
+      font-weight:800;
+    }
+
+    .hero-content p{
+      font-size:1rem;
+      line-height:1.6;
+      margin-bottom:20px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:12px 22px;
+      border-radius:40px;
+      text-decoration:none;
+      font-weight:700;
+      transition:.3s;
+      display:inline-block;
+    }
+
+    .btn-red{
+      background:#D70022;
+      color:#fff;
+    }
+
+    .btn-white{
+      background:#fff;
+      color:#111;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      opacity:.9;
+    }
+
+    main{
+      padding:45px 30px;
+      max-width:900px;
+      margin:auto;
+    }
+
+    .section-title{
+      font-size:2rem;
+      margin-bottom:25px;
+      font-weight:800;
+    }
+
+    .content-text{
+      line-height:1.9;
+      font-size:1rem;
+      margin-bottom:30px;
+    }
+
+    .history-btn{
+      display:inline-block;
+      background:#D70022;
+      color:#fff;
+      padding:12px 22px;
+      border-radius:40px;
+      text-decoration:none;
+      font-weight:700;
+      transition:.3s;
+    }
+
+    .history-btn:hover{
+      opacity:.9;
+      transform:translateY(-2px);
+    }
+
+    footer{
+      background:#213D99;
+      color:#fff;
+      padding:35px 25px;
+    }
+
+    .footer-content{
+      max-width:1100px;
+      margin:auto;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    .footer-info{
+      max-width:600px;
+    }
+
+    .footer-info h3{
+      margin-bottom:10px;
+      font-size:1.1rem;
+    }
+
+    .footer-info p{
+      line-height:1.8;
+      margin-bottom:15px;
+      font-size:.95rem;
+    }
+
+    .footer-info strong{
+      display:block;
+      margin-bottom:8px;
+    }
+
+    .logo{
+      width:120px;
+      height:120px;
+      object-fit:contain;
+      background:#fff;
+      border-radius:50%;
+      padding:5px;
+    }
+
+    .copy{
+      text-align:center;
+      margin-top:25px;
+      font-size:.8rem;
+      opacity:.9;
+    }
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:2.1rem;
+      }
+
+      nav{
+        gap:12px;
+      }
+
+      .hero{
+        min-height:320px;
+        padding:25px;
+      }
+
+      .hero-content h2{
+        font-size:1.8rem;
+      }
+
+      .section-title{
+        font-size:1.7rem;
+      }
+
+      .footer-content{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .logo{
+        width:100px;
+        height:100px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>DOJO TACAYAMBA</h1>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="historia.html">História</a>
+      <a href="faixas.html">Faixas</a>
+      <a href="estudos.html">Estudos</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contatos</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <h2>BEM VINDO(A)</h2>
+
+      <p>
+        Aqui você aprende sobre a arte marcial japonesa
+        que desenvolve corpo, mente e espírito através
+        da disciplina e respeito.
+      </p>
+
+      <div class="buttons">
+
+        <a href="estudos.html" class="btn btn-red">
+          Aprender agora!
+        </a>
+
+        <a href="sobre.html" class="btn btn-white">
+          Sobre o Dojo
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <main>
+
+    <h2 class="section-title">O que é Judô?</h2>
+
+    <p class="content-text">
+
+      O judô é uma arte marcial e esporte olímpico
+      de origem japonesa, criado por Jigoro Kano em 1882.
+
+      O nome "judô" significa "caminho suave" ou
+      "caminho da flexibilidade".
+
+      <br><br>
+
+      Mais do que um esporte, o judô é uma filosofia
+      de vida que ensina valores fundamentais como
+      respeito, disciplina, humildade e perseverança.
+
+    </p>
+
+    <a href="historia.html" class="history-btn">
+      Conheça a História
+    </a>
+
+  </main>
+
+  <footer>
+
+    <div class="footer-content">
+
+      <div class="footer-info">
+
+        <h3>Dojo Tacayamba</h3>
+
+        <p>
+          Ensinando os valores do judô:<br>
+          Respeito, Disciplina e Excelência.
+        </p>
+
+        <strong>Contatos</strong>
+
+        <p>
+          Instagram: @DojoTacayamba<br>
+          Telefone: (81) 97401 - 9739<br>
+          Endereço: Rua Quixabeira, 22 - Tabajara, Olinda - PE
+        </p>
+
+        <strong>Horários</strong>
+
+        <p>
+          Segunda, Quarta e Sexta: 16h - 19h30
+          <br>
+          Terça e Quinta: 18h - 21h
+        </p>
+
+      </div>
+
+      <img class="logo" src="image/favicon_dojo_tacayamba.png" alt="Logo Dojo">
+      
+    </div>
+
+    <div class="copy">
+      © 2026 Dojo Tacayamba. Todos os direitos reservados.<br>
+      App Web Desenvolvido por Everton Rodrigo
+    </div>
+
+  </footer>
+</body>
+</html>

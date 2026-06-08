@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estudos de Judô | Dojo Tacayamba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Montserrat', sans-serif;
+      background:#e9e9e9;
+      color:#222;
+    }
+
+    header{
+      background: #000000;
+      padding:60px 30px 25px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      font-weight:800;
+      margin-bottom:15px;
+      color: #fff;
+    }
+
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#fff;
+      font-size:0.95rem;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      opacity:.7;
+    }
+
+    main{
+      padding:35px 25px;
+      max-width:900px;
+      margin:auto;
+    }
+
+    h2{
+      color: #000000;
+      font-size:2rem;
+      margin-bottom:20px;
+    }
+
+    p{
+      line-height:1.7;
+      margin-bottom:25px;
+    }
+
+    .faixas-container{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      margin-top:35px;
+    }
+
+    .faixa{
+      text-decoration:none;
+      text-align:center;
+      padding:22px;
+      font-size:2rem;
+      font-weight:800;
+      border-radius:4px;
+      transition:.25s;
+    }
+
+    .faixa:hover{
+      transform:scale(1.02);
+      opacity:.92;
+    }
+
+    .branca{
+      background:#ffffff;
+      color:#000;
+    }
+
+    .cinza{
+      background:#777;
+      color:#fff;
+    }
+
+    .azul{
+      background:#1f78c1;
+      color:#fff;
+    }
+
+    .amarela{
+      background:#e0c22e;
+      color:#000;
+    }
+
+    .laranja{
+      background:#cf5519;
+      color:#fff;
+    }
+
+    .verde{
+      background:#167c0f;
+      color:#fff;
+    }
+
+    .roxa{
+      background:#6d0bb3;
+      color:#fff;
+    }
+
+    .marrom{
+      background:#5c2200;
+      color:#fff;
+    }
+
+    .preta{
+      background:#000;
+      color:#fff;
+    }
+
+    @media(max-width:768px){
+
+    .faixa{
+        font-size:1.5rem;
+        padding:18px;
+      }
+
+    }
+    .banner{
+      width:100%;
+      height:240px;
+      background: #000000;
+      margin:35px 0;
+    }
+
+    footer{
+      background: #000000;
+      padding:40px 25px;
+      color:#fff;
+    }
+
+    .footer-content{
+      display:flex;
+      justify-content:space-between;
+      gap:30px;
+      flex-wrap:wrap;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .footer-info{
+      max-width:500px;
+    }
+
+    .footer-info h3{
+      margin-bottom:10px;
+    }
+
+    .footer-info strong{
+      display:block;
+      margin-top:15px;
+    }
+
+    .logo{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      background:#fff;
+    }
+
+    .copy{
+      text-align:center;
+      margin-top:30px;
+      font-size:.8rem;
+    }
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:2.2rem;
+      }
+
+      .footer-content{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+
+    <h1>DOJO TACAYAMBA</h1>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="historia.html">História</a>
+      <a href="faixas.html">Faixas</a>
+      <a href="estudos.html">Estudos</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contatos</a>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <h2>ESTUDOS DO JUDÔ (POR FAIXA):</h2>
+
+    <p>
+      Selecione a faixa desejada para acessar os conteúdos de estudo,
+      técnicas, fundamentos, vídeos e materiais específicos de cada nível.
+    </p>
+
+    <div class="faixas-container">
+
+      <a href="faixa-branca.html" class="faixa branca">
+        Faixa Branca
+      </a>
+
+      <a href="faixa-cinza.html" class="faixa cinza">
+        Faixa Cinza
+      </a>
+
+      <a href="faixa-azul.html" class="faixa azul">
+        Faixa Azul
+      </a>
+
+      <a href="faixa-amarela.html" class="faixa amarela">
+        Faixa Amarela
+      </a>
+
+      <a href="faixa-laranja.html" class="faixa laranja">
+        Faixa Laranja
+      </a>
+
+      <a href="faixa-verde.html" class="faixa verde">
+        Faixa Verde
+      </a>
+
+      <a href="faixa-roxa.html" class="faixa roxa">
+        Faixa Roxa
+      </a>
+
+      <a href="faixa-marrom.html" class="faixa marrom">
+        Faixa Marrom
+      </a>
+
+      <a href="faixa-preta.html" class="faixa preta">
+        Faixa Preta
+      </a>
+
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="footer-content">
+
+      <div class="footer-info">
+
+        <h3>Dojo Tacayamba</h3>
+
+        <p>
+          Ensinando os valores do judô:<br>
+          Respeito, Disciplina e Excelência.
+        </p>
+
+        <strong>Contatos</strong>
+
+        <p>
+          Instagram: @DojoTacayamba<br>
+          Telefone: (81) 97401 - 9739<br>
+          Endereço: Rua Quixabeira, 22 - Tabajara, Olinda - PE
+        </p>
+
+        <strong>Horários</strong>
+
+        <p>
+          Segunda, Quarta e Sexta: 16h - 19h30
+          <br>
+          Terça e Quinta: 18h - 21h
+        </p>
+
+      </div>
+
+      <img class="logo" src="image/favicon_dojo_tacayamba.png" alt="Logo Dojo">
+      
+    </div>
+
+    <div class="copy">
+      © 2026 Dojo Tacayamba. Todos os direitos reservados.<br>
+      App Web Desenvolvido por Everton Rodrigo
+    </div>
+
+  </footer>
+</body>
+</html>
