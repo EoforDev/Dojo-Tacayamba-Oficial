@@ -82,16 +82,29 @@
       margin-bottom:20px;
     }
 
-    iframe {
-      width: 100%;
-      height: 480px;
-      border-radius: 20px;
+    .video{
+      width:100%;
+      max-width:900px;
+      margin:20px auto 35px;
+      aspect-ratio:16/9;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,.15);
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
+    .video iframe{
+      width:100%;
+      height:100%;
+      border:0;
+    }
+
+    main img{
+      display:block;
+      width:100%;
+      max-width:900px;
+      margin:20px auto 35px;
+      border-radius:20px;
+      height:auto;
     }
 
     footer{
@@ -138,15 +151,55 @@
 
     @media(max-width:768px){
 
-      header h1{
-        font-size:2.2rem;
+      header{
+          padding:35px 15px 20px;
       }
 
+      header h1{
+          font-size:2rem;
+      }
+
+      nav{
+          gap:10px;
+          flex-wrap:nowrap;
+          overflow-x:auto;
+          white-space:nowrap;
+      }
+
+      nav::-webkit-scrollbar{
+          display:none;
+      }
+
+      nav a{
+          font-size:.82rem;
+      }
+
+      main{
+          padding:25px 15px;
+      }
+
+      h2{
+          font-size:2rem;
+      }
+
+      h3{
+          font-size:1.3rem;
+      }
+
+      .video{
+          margin:15px auto 30px;
+          border-radius:15px;
+      }
+      
       .footer-content{
         flex-direction:column;
         align-items:flex-start;
       }
 
+      .logo{
+          width:100px;
+          height:100px;
+      }
     }
 
   </style>
@@ -182,29 +235,29 @@
     <p><strong>A filosofia:</strong> O lema central é "máxima eficiência com o mínimo esforço". Além de lutar, o judô ensina respeito, disciplina, autoconfiança e harmonia, sendo conhecido como o "caminho suave".</p>
 
     <h3>História do Judô:</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cWBysMuzgho?si=lcmmI0y3xPtlsdjj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/cWBysMuzgho?si=lcmmI0y3xPtlsdjj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
     <h3>Quem foi Jigoro Kano?</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/-DXW3LJKwyE?si=072LxoPsIReIjxI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/-DXW3LJKwyE?si=072LxoPsIReIjxI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
     <h3>Regras básicas:</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6LWfTDfOm7I?si=xWthVx87XJSWKDJP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/6LWfTDfOm7I?si=xWthVx87XJSWKDJP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qkh4CEPX6lo?si=ePTof5CfIrjBlmHd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/Qkh4CEPX6lo?si=ePTof5CfIrjBlmHd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
     <h3>Etiqueta no Dojo:</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DvG2LOudKHs?si=DxCg0RqPLOA_-T3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/DvG2LOudKHs?si=DxCg0RqPLOA_-T3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
     <h3>Cumprimentos (Rei):</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lMFfv5NDtZI?si=fHgYXyeODv8TggDi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/lMFfv5NDtZI?si=fHgYXyeODv8TggDi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
     <h3>Ukemi (Quedas):</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UKox9rgjsFo?si=gcNokD_Vecf9p0ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/UKox9rgjsFo?si=gcNokD_Vecf9p0ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
     <h3>Vocabulário básico:</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ7MAhhWOj0?si=QYVCGXMoenkJsJBd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/iQ7MAhhWOj0?si=QYVCGXMoenkJsJBd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5gFzm9S7Uqg?si=8br9HiIvWha_xa6e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/5gFzm9S7Uqg?si=8br9HiIvWha_xa6e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
     <h3>Direções em Japonês:</h3>
     <img src="image/Direções.png" alt="Direções em Japonês">
